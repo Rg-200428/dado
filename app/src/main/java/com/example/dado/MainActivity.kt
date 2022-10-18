@@ -46,6 +46,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun segundoDadoSoproPAto() {
-        //Sopro guei
+        //Sopro guei y marica
     }
 }
