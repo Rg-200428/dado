@@ -6,30 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_dadonumeros"
+    <Button
+        android:id="@+id/tv_tirarDado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="1"
-        android:textSize="@dimen/ricardo"
+        android:text="tirar dado"
+        android:textSize="@dimen/ticardo"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_dadoImage" />
+
+    <Button
+        android:id="@+id/tv_otroDado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="otro dado"
+        android:textSize="@dimen/ticardo"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/iv_dadoImage"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/tv_boton"
+        android:id="@+id/tv_quitar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="tirar dado"
-        android:textSize="@dimen/ricardo"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="quitar dado"
+        android:visibility="gone"
+        android:textSize="@dimen/ticardo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_dadonumeros" />
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <ImageView
-        android:id="@+id/iv_dado"
+        android:id="@+id/iv_dadoImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/dice_1"
@@ -37,6 +50,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_dadoImage2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/dice_1"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_quitar" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
